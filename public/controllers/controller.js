@@ -1,5 +1,4 @@
-var myApp = angular.module('myApp', []);
-myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http){
-	console.log("hell world from controller");
-}]);
-
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+	console.log("controller Connected")
+});
