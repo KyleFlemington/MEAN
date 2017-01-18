@@ -1,7 +1,7 @@
 <!DOCTYPE>
-<html ng-app>
+<html ng-app='myApp'>
 	<head>
-		<title> MEAN Trial	</title>
+		<title> MEAN Trial </title>
 		<!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,16 +11,256 @@
 	</head>
 
 	<body>
-		<div class="container">
+		<div class="container" ng-controller="AppCntrl">
+			<h1> New Cat </h1>
+				<table class='table'>
+					<thead>
 
-			<h1>Testing Testing</h1>
-			
-				
-			<input ng-model="test">
+						<tr>
+							<th> Cat Code: </th>
+							<td> 1 </td>
+						</tr>
+
+						<tr>
+							<th> DOB: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Intake Name: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Intake Age: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Intake Date: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Intake Person: </th>
+							<td></td>
+						</tr>	
+
+						<tr>
+							<th> Intake Photo: </th>
+							<td></td>
+						</tr>	
+							
+						<tr>
+							<th> Intake Location: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Intake Story: </th>
+							<td></td>
+						</tr>
+						
+						<tr>	
+							<th> Intake Phone: </th>
+							<td></td>
+						<tr>
+
+						<tr>
+							<th> Intake Email: </th>
+							<td></td>
+						</tr>
+						
+						<tr>	
+							<th> Cat Description: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Cat Gender: </th>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<th> Cat Hair: </th>
+							<td>
+						<tr>
+
+						<tr>
+							<th> Cat Approachability: </th>
+							<td></td>
+						</tr>
+	
+							
+						<tr>
+							<th> Ears: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Teeth: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Fleas: </th>
+							</tr>
+						</tr>
+
+						<tr>
+							<th> Eyes: </th>
+							<td></td>
+						</tr>
+
+
+						<tr>
+							<th> Food: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Litter: </th>
+							<td></td>
+						</tr>
+
+	
+						<tr>
+							<th> Deflea: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Deflea Date: </th>
+							<td></td>
+						</tr>
+
+						<tr> 
+							<th> Defleaed By: </th>
+							<td></td>
+						<tr>
+
+						<tr>
+							<th> 1st DeWorming: </th>
+							<td></td>
+						</tr>
+
+						<tr> 
+							<th> 1st DeWorming By: </th>
+							<td></td>
+						<tr>
+
+
+						<tr> 
+							<th> 1st DeWorming Date: </th>
+							<td></td>
+						<tr>			
+
+						<tr>
+							<th> 2nd DeWorming: </th>
+							<td></td>
+						</tr>
+
+						<tr> 
+							<th> 2nd DeWorming By: </th>
+							<td></td>
+						<tr>
+
+
+						<tr> 
+							<th> 2nd DeWorming Date: </th>
+							<td></td>
+						<tr>				
+
+						<tr>
+							<th> 1st Vaccination: </th>
+							<td></td>
+						</tr>
+
+						<tr> 
+							<th> 1st Vaccination By: </th>
+							<td></td>
+						<tr>
+
+
+						<tr> 
+							<th> 1st Vaccination Date: </th>
+							<td></td>
+						<tr>			
+
+						<tr>
+							<th> 2nd Vaccination: </th>
+							<td></td>
+						</tr>
+
+						<tr> 
+							<th> 2nd Vaccination By: </th>
+							<td></td>
+						<tr>
+
+
+						<tr> 
+							<th> 2nd Vaccination Date: </th>
+							<td></td>
+						<tr>	
+
+						<tr>
+							<th> Spay / Neuter: </th>
+							<td></td>
+						</tr>
+		
+						<tr>
+							<th> Spay / Neuter Date: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Spay / Neuter By: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Spay / Neuter Tattoo #: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Spay / Neuter Microchip: </th>
+							<td></td>
+						</tr>
+						
+
+						<tr>
+							<th> Fostered Date: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Foster Person: </th>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th> Foster Email: </th>
+							<td>
+						</td>
+
+						<tr>
+							<th> Foster Phone: </th>
+							<td></td>
+						<tr>
+
+					</tr>
+					<input ng-model="test">
 				{{test}}
+				</thead>
+			</table>
+
+				
 	
 		</div>
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="controllers/controller.js"></script>
 
 	</body>
 	
