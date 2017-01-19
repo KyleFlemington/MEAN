@@ -5,7 +5,7 @@ app.controller('myCtrl', function($scope, $http) {
 
 	$http.get('/catList').then(function(res){
 		console.log("I got the data requested")
-		$scope.catList = response
+		$scope.catList = res
 	}); 
 
 });

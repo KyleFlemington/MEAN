@@ -79,8 +79,8 @@ app.get('/catList', function(req,res){
 		defleaDate: 'yesterday',
 		defleaedBy: 'me',
 		onedeWorming: 'pill',
-		onedeormingBy: 'me',
-		onedeormingDate: 'yesterday',
+		onedeWormingBy: 'me',
+		onedeWormingDate: 'yesterday',
 		twoDeWorming: 'pill',
 		twoDeWormingBy: 'me',
 		twoDeWormingDate: 'yesterday',
@@ -102,7 +102,7 @@ app.get('/catList', function(req,res){
 	};
 
 	var catList = [cat1, cat2];
-	res.json(catList)
+	res.json(catList);
 
 });
 
