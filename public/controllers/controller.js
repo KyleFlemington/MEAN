@@ -8,5 +8,10 @@ app.controller('myCtrl', function($scope, $http) {
 		$scope.catList = res.data;
 	}); 
 
+
+	$scope.addCat = function() {
+		console.log($scope.cat);
+	};
+
 });
  
