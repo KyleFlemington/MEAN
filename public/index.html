@@ -19,6 +19,7 @@
 						<tr ng-repeat="cat in catList">
 							<th> Cat Code </th>
 							<td>{{ cat.catCode }}</td>
+							<td><button class='btn btn-danger' ng-click='remove(cat._id)'> Delete Cat </button> </td>
 						</tr>
 
 						<tr ng-repeat="cat in catList">
@@ -253,6 +254,8 @@
 							<td>{{cat.fosterPhone}}</td>
 						</tr>
 
+						
+			
 					</tr>
 					<input ng-model="test">
 				{{test}}
@@ -522,10 +525,6 @@
 								<th> Foster Phone </th>
 								<td> <input class="form-control" ng-model="cat.fosterPhone"> </td>
 						</tr>
-
-
-
-
 
 
 
