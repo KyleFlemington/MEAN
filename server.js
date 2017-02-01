@@ -7,11 +7,13 @@ var mongojs 			= require('mongojs');
 var db 						= mongojs('catList', ['catList']);
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
-
 app.set('view engine', 'html');
+
+app.listen(5000);
+console.log('server running on port 5000');
 
 
 app.get('/catList', function(req,res){
@@ -41,12 +43,42 @@ app.delete('/catList/:id', function(req, res){
 
 });
 
-app.get('/addCat', function(req, res){
-	res.render('/addCat.html')
+
+app.get('/', function(req, res) {
+		res.sendfile(__dirname + '/public/index.html');
 })
 
+app.get('/aboutUs', function(req, res){
+	res.sendfile(__dirname + '/public/aboutUs.html')
+});
 
 
+app.get('/addCat', function(req, res){
+	res.sendfile(__dirname + '/public/addCat.html')
+});
 
-app.listen(5000);
-console.log('server running on port 5000');
+
+app.get('/adopt', function(req, res){
+	res.sendfile(__dirname + '/public/adopt.html')
+});
+
+app.get('/catcare', function(req, res){
+	res.sendfile(__dirname + '/public/catcare.html')
+});
+
+app.get('/events', function(req, res){
+	res.sendfile(__dirname + '/public/events.html')
+});
+
+
+app.get('/mewsletter', function(req, res){
+	res.sendfile(__dirname + '/public/mewsletter.html')
+});
+
+app.get('/thankyou', function(req, res){
+	res.sendfile(__dirname + '/public/thankyou.html')
+});
+
+app.get('/volunteer', function(req, res){
+	res.sendfile(__dirname + '/public/volunteer.html')
+});
